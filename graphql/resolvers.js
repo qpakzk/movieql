@@ -1,6 +1,12 @@
+const frodo = {
+    name: "Frodo",
+    age: 23,
+    gender: "male"
+};
+
 const resolvers = {
     Query: {
-        name: () => "frodo"
+        person: () => frodo
     }
 };
 
