@@ -1,10 +1,10 @@
-import { people, getById } from './db';
+import { getMovies, getById } from './db';
 
 const resolvers = {
-    Query: {
-        people: () => people,
-        person: (_, { id }) => getById(id)
-    }
+	Query: {
+		movies: () => getMovies(),
+		movie: (_, { id }) => getById(id),
+	},
 };
 
 export default resolvers;
